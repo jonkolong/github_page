@@ -20,72 +20,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container d-flex">
-        <a class="navbar-brand" href="#"><i class="bi bi-apple"> </i>jonkolong</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">icon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">logo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">background</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li> -->
-          </ul>
-          <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
+    <!-- Main Container -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 kotakUtama">
+      <!-- Login Container -->
+      <div class="row border rounded-5 p-3 bg-white shadow boxArea">
+        <!-- Left Box -->
+        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column leftBox">
+          <div class="featured-image mb-3">
+            <!-- <img src="https://portal.deliserdangkab.go.id/wp-content/berkas/1686018101.png" class="img-fluid gambarLogin d-none d-md-block" alt="gambarLogin" /> -->
+            <img src="img/laptop.svg" class="img-fluid gambarLogin d-none d-md-block" alt="gambarLogin" />
+          </div>
+          <small
+            ><p class="text-center text-white fs-5 leftText">Layanan Pemerintah<br />Berbasis Elektronik</p></small
+          >
+          <small class="text-center text-white text-wrap mb-3">Kabupaten Deli Serdang</small>
         </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-    <!-- Baris Card 1 Start -->
-    <div class="row container-fluid">
-      <div class="card mx-4 my-2" style="width: 18rem">
-        <img src="img/login.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Lambang Deli Serdang</h5>
-          <p class="card-text">Lambang resmi Kabupaten Deli Serdang.</p>
-          <a href="#" class="btn btn-md">salin</a>
-        </div>
-      </div>
-    </div>
-    <!-- Baris Card 1 End -->
-    <!-- Baris Card 2 Start -->
-    <div class="row container-fluid">
-      <div class="card mx-4 my-2" style="width: 18rem">
-        <img src="img/login.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Lambang Deli Serdang</h5>
-          <p class="card-text">Lambang resmi Kabupaten Deli Serdang.</p>
-          <a href="#" class="btn btn-md">salin</a>
+
+        <!-- Right Box -->
+        <div class="col-md-6 rightBox">
+          <div class="row align-items-center">
+            <div class="header-text mb-4">
+              <p class="text-center mt-4">Selamat datang!</p>
+              <p class="text-center">Silahkan Login</p>
+            </div>
+            <form action="" method="post">
+              <div class="input-group mb-3">
+                <input type="text" name="" id="" class="form-control form-control-lg bg-light fs-6" placeholder="Ketikkan username" />
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" name="password" id="password" class="form-control form-control-lg bg-light fs-6" placeholder="Kata Sandi" />
+              </div>
+              <div class="input-group mb-3 d-flex justify-content-between">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" name="rememberme" id="rememberme" role="switch" />
+                  <label class="form-check-label" for="checkbox"><small>Ingat saya</small></label>
+                </div>
+                <div class="forgot">
+                  <small><a href="forgot.html">Lupa kata sandi?</a></small>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <button class="login-btn w-100 fs-6" id="submit" name="submit"><i class="bi bi-box-arrow-in-right me-2"></i>Login</button>
+              </div>
+              <div class="input-group mb-3">
+                <button class="logoG w-100 fs-6" id="googleid" name="googleid"><img src="img/GLogo.svg" class="me-2" alt="logoG" /><small>Masuk dengan Google</small></button>
+              </div>
+            </form>
+            <div class="row">
+              <small class="text-center">Tidak punya akun? <a href="register.html" class="text-danger">Daftar</a></small>
+              <small class="text-end"
+                ><a href="index.html"><i class="bi bi-reply text-secondary fs-4"></i></a
+              ></small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Baris Card 2 End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
